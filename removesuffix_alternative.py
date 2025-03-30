@@ -7,3 +7,6 @@ def removesuffix_replicate(text, remove):
         output = text
     return output
 #Utilize the created function
+name = "MarxiusIvan"
+call = removesuffix_replicate(name, "Ivan")
+print(call)
