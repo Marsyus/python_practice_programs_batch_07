@@ -11,3 +11,6 @@ def rstrip_replicate(text):
             output += i
     return output[::-1]
 #Utilize the created function
+name = "Marxius Ivan   "
+call = rstrip_replicate(name)
+print(call)
