@@ -11,3 +11,6 @@ def islower_replicate(text):
     else:
         return False
 #Utilize the created function
+name = "marxius"
+call = islower_replicate(name)
+print(call)
