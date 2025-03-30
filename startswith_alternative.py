@@ -2,4 +2,8 @@
 #Create a function to replicate startswith()
 def startswith_replicate(text, beginning):
     start = "x" + text
+    if "x" + beginning in start:
+        return True
+    else:
+        return False
 #Utilize the created function
