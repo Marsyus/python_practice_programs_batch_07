@@ -7,3 +7,6 @@ def count_replicate(val, var):
             count += 1
     return count
 #Utilize the created function
+name = "Marxius Ivan Adolf Denniel"
+call = count_replicate(name, "n")
+print(call)
