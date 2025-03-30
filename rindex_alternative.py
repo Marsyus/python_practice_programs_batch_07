@@ -10,3 +10,6 @@ def rindex_replicate(val, var):
                 last = True
     return count
 #Utilize the created function
+name = "Marxius Ivan Adolf Denniel"
+call = rindex_replicate(name, "a")
+print(call)
