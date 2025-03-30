@@ -3,16 +3,19 @@
 def rindex_replicate(val, var):
     last = True
     count = len(val)
-    for i in var:
-        if last:
-            l_var = i
-            last = False
-    for i in val[::-1]:
-        if not last:
-            count -= 1
-            if i == l_var:
-                last = True
-    return count
+    if var in val:
+        for i in var:
+            if last:
+                l_var = i
+                last = False
+        for i in val[::-1]:
+            if not last:
+                count -= 1
+                if i == l_var:
+                    last = True
+        return count
+    else:
+	return "ValueError: substring not found"
 #Utilize the created function
 name = "Marxius Ivan Adolf Denniel"
 call = rindex_replicate(name, "a")
