@@ -2,4 +2,8 @@
 #Create a function to replicate count()
 def count_replicate(val, var):
     count = 0
+    for i in val:
+        if i == var:
+            count += 1
+    return count
 #Utilize the created function
