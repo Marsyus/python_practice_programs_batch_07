@@ -2,7 +2,7 @@
 #Create a function to replicate islower()
 def islower_replicate(text):
     lower_count = 0
-    lowercase = "abcdefghijklmnopqrstuvwxyz"
+    lowercase = "abcdefghijklmnopqrstuvwxyz "
     for i in text:
         if i in lowercase:
             lower_count += 1
