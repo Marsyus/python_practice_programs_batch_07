@@ -3,4 +3,11 @@
 def rstrip_replicate(text):
     strip = True
     output = ""
+    for i in text[::-1]:
+        if strip and i == " ":
+            continue
+        else:
+            strip = False
+            output += i
+    return output[::-1]
 #Utilize the created function
