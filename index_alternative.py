@@ -3,16 +3,19 @@
 def index_replicate(val, var):
     first = True
     count = -1
-    for i in var:
-        if first:
-            first_var = i
-            first = False
-    for i in val:
-        if not first:
-            count += 1
-            if i == first_var:
-                first = True
-    return count
+    if var in val:
+        for i in var:
+            if first:
+                first_var = i
+                first = False
+        for i in val:
+            if not first:
+                count += 1
+                if i == first_var:
+                    first = True
+        return count
+    else:
+	return "ValueError: substring not found"
 #Utilize the created function
 name = "Marxius Ivan Adolf Denniel"
 call = index_replicate(name, "l")
