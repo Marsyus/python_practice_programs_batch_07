@@ -4,3 +4,6 @@ def rjust_replicate(text, width, char):
     output = char * width + text
     return output
 #Utilize the created function
+name = "Marxius"
+call = rjust_replicate(name, 10, "-")
+print(call)
