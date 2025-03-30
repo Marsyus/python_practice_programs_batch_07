@@ -7,3 +7,6 @@ def startswith_replicate(text, beginning):
     else:
         return False
 #Utilize the created function
+name = "MarxiusIvan"
+call = startswith_replicate(name, "Marxius")
+print(call)
