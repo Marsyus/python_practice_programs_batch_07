@@ -5,3 +5,6 @@ def upper_replicate(text):
     output = text.translate(table)
     return output
 #Utilize the created function
+name = "MarxiusIvan"
+call = upper_replicate(name)
+print(call)
