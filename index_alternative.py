@@ -10,3 +10,6 @@ def index_replicate(val, var):
                 first = True
     return count
 #Utilize the created function
+name = "Marxius Ivan Adolf Denniel"
+call = index_replicate(name, "l")
+print(call)
