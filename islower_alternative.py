@@ -3,4 +3,11 @@
 def islower_replicate(text):
     lower_count = 0
     lowercase = "abcdefghijklmnopqrstuvwxyz"
+    for i in text:
+        if i in lowercase:
+            lower_count += 1
+    if lower_count == len(text):
+        return True
+    else:
+        return False
 #Utilize the created function
