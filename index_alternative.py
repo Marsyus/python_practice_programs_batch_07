@@ -3,10 +3,14 @@
 def index_replicate(val, var):
     first = False
     count = -1
+    for i in var:
+        if first:
+            first_var = i
+            first = False
     for i in val:
         if not first:
             count += 1
-            if i == var:
+            if i == first_var:
                 first = True
     return count
 #Utilize the created function
