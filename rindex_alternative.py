@@ -3,4 +3,10 @@
 def rindex_replicate(val, var):
     last = False
     count = len(val)
+    for i in val[::-1]:
+        if not last:
+            count -= 1
+            if i == var:
+                last = True
+    return count
 #Utilize the created function
