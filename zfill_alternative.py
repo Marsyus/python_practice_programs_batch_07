@@ -5,3 +5,6 @@ def zfill_replicate(num, width):
     output = "0" * need + num
     return output
 #Utilize the created function
+number = "0917"
+call = zfill_replicate(number, 6)
+print(call)
